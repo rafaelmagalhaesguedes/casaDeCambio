@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa de Câmbio</title>
-    <!-- Bootstrap + CSS -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./src/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="my-4">Casa de Câmbio</h1>
-        <form id="conversaoForm">
-            <div class="mb-3">
-                <label for="moeda" class="form-label">Tipo de Moeda:</label>
-                <input type="text" class="form-control" id="moeda" placeholder="Digite o tipo de moeda (ex: USD, EUR, BRL)" required>
+    <main class="container">
+        <header class="header">
+            <h1 class="title">Casa de <span class="sub-title">Câmbio</span></h1>
+        </header>
+        <form id="conversaoForm" class="form">
+            <div class="input">
+                <label for="moeda" class="label">Digite a moeda: </label>
+                <input type="text" class="form-control ipt" id="moeda" placeholder="USD" required>
             </div>
-            <button type="submit" class="btn btn-primary">Converter</button>
+            <div class="button">
+                <button type="submit" class="btn">Pesquisar</button>
+            </div>
         </form>
-        <div id="cotacao" class="mt-4 d-flex flex-wrap justify-content-between">
-            <!-- Os resultados da conversão serão exibidos aqui em colunas -->
-        </div>
-    </div>
 
-    <!-- Incluindo o Bootstrap JS e os scripts personalizados -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <div id="cotacao" class="root"></div>
+    </main>
+
+    <!-- APP JS-->
     <script type="module" src="./src/app.js"></script>
 </body>
 </html>
