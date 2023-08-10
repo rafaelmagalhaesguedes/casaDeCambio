@@ -5,18 +5,19 @@ import Swal from 'sweetalert2'
 export async function obterCotacao(moeda){
   try {
     const response = await fetch(`https://api.exchangerate.host/latest?base=${moeda}`);
-    if (!response) {
-        throw new Error('Error');
-    }
     const data = await response.json();
+    if (data.base !== moeda) {
+      throw new Error('Moeda não existe');
+    }
     console.log(data);
     return data;
   } catch (error) { 
-    return Swal.fire({
+    Swal.fire({
       icon: 'error',
       title: 'Oops...',
       text: error.message,
     });
+    return;
   }
 }
 

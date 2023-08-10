@@ -42,12 +42,13 @@ const form = document.getElementById('conversaoForm');
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
   const moeda = document.getElementById('moeda').value;
-  if (moeda === 'number') {
-    return Swal.fire({
+  if (!moeda) {
+    Swal.fire({
       icon: 'error',
       title: 'Informe o tipo da moeda',
       text: error.message,
     });
+    return;
   }
   const cotacao = await obterCotacao(moeda);
   exibirCotacao(cotacao);
