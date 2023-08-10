@@ -42,7 +42,7 @@ function exibirCotacao(cotacao) {
 const form = document.getElementById('conversaoForm');
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
-  const moeda = document.getElementById('moeda').value;
+  const moeda = document.getElementById('moeda').value.toUpperCase();
   if (!moeda) {
     Swal.fire({
       icon: 'error',
