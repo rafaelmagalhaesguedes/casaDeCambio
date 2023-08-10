@@ -52,11 +52,17 @@ This Currency Exchange System is a web application that allows users to input a 
 
 ## Screenshots
 
-### Initial Page
+### Initial Page - Version Desktop/Laptop
 ![Homepage](https://github.com/rafaelmagalhaesguedes/casaDeCambio/blob/main/src/assets/screen-system/home.png)
 
-### Results
+### Results Page - Version Desktop/Laptop
 ![Homepage](https://github.com/rafaelmagalhaesguedes/casaDeCambio/blob/main/src/assets/screen-system/result.png)
+
+### Initial Page - Version Mobile
+![Homepage](https://github.com/rafaelmagalhaesguedes/casaDeCambio/blob/main/src/assets/screen-system/home-mobile.png)
+
+### Results Page - Version Mobile
+![Homepage](https://github.com/rafaelmagalhaesguedes/casaDeCambio/blob/main/src/assets/screen-system/result-mobile.png)
 
 ## Contact
 
