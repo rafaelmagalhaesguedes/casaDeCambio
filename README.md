@@ -52,7 +52,7 @@ This Currency Exchange System is a web application that allows users to input a 
 
 ## Screenshots
 
-Include screenshots of the application interface or any relevant visuals to help users understand the application's appearance and functionality.
+![Homepage]('./src/assets/screen-system/home.png')
 
 ## Contact
 
