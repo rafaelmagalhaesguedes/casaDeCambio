@@ -29,8 +29,8 @@ This Currency Exchange System is a web application that allows users to input a 
 
 1. Clone this repository:
 
-   git clone https://github.com/your-username/currency-exchange-system.git
-   cd currency-exchange-system
+   git clone git@github.com:rafaelmagalhaesguedes/casaDeCambio.git
+   cd casaDeCambio
 
 1. Open the index.html file in your preferred web browser.
 
