@@ -2,6 +2,8 @@
 
 This project is a practical assignment from the Front-end module of Trybe, developed by Rafael M. Guedes (Student of Turma 34). The project aims to provide currency exchange rates for various currencies.
 
+**Link deploy:** <a href="https://casa-de-cambios-rafaelmagalhaesguedes.vercel.app/">Casa de Câmbio</a>
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -15,8 +17,6 @@ This project is a practical assignment from the Front-end module of Trybe, devel
 ## Introduction
 
 This Currency Exchange System is a web application that allows users to input a currency code and retrieve the exchange rates for that currency against other currencies. The application uses the ExchangeRate API to fetch the latest currency exchange rates.
-
-**Link deploy:** <a href="">Casa de Câmbio</a>
 
 ## Features
 
