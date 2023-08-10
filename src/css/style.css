@@ -8,8 +8,10 @@ body {
 .container {
   width: 1512px;
   height: 982px;
-  padding: 20px 0 0 100px;
+  padding-top: 20px;
+  display: flex;
   justify-content: center;
+  align-content: center;
 }
 
 .header {
@@ -140,11 +142,21 @@ body {
   color: rgba(255, 231, 19, 1);
 }
 
+@media only screen and (max-width: 375px) {
+  .root {
+    display: flex;
+    justify-content: center;
+  }
+  .title-list {
+    font-size: 1.3rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     margin: 0;
     padding: 0;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     height: auto;
   }

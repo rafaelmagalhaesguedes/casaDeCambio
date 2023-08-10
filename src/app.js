@@ -22,7 +22,7 @@ function exibirCotacao(cotacao) {
 
   const head = `
     <div class="title-secundary">
-      <h2>Valores referentes a 1 ${cotacao.base}</h2>
+      <h2 class="title-list">Valores referentes a 1 ${cotacao.base}</h2>
     </div>
   `;
 
