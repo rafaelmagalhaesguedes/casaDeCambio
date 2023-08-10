@@ -177,3 +177,41 @@ body {
     display: flex;
   }
 }
+
+@media only screen and (min-width: 769px) and (max-width: 960px) {
+  .container {
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .header {
+    width: 100%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .sub-title {
+    font-size: 2rem;
+  }
+  
+  .form {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .ipt {
+    width: 100%;
+  }
+  .btn {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .root {
+    width: 100%;
+    display: flex;
+  }
+}
