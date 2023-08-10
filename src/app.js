@@ -10,6 +10,7 @@
  */
 
 import { obterCotacao } from './services/api.js';
+import Icon from './assets/coin.png';
 
 // Sweet alert
 import Swal from 'sweetalert2'
@@ -28,7 +29,7 @@ function exibirCotacao(cotacao) {
   const cotacoes = cotacao.rates;
   const cotacoesHtml = Object.entries(cotacoes).map(([moeda, valor]) => `
       <ul class="list">
-        <li class="link-icon"> <img src="./src/assets/coin.png" /> </li>
+        <li class="link-icon"> <img src="${Icon}" /> </li>
         <li class="link-moeda">${moeda}</li>
         <li class="link-valor">${valor.toFixed(3)}</li>
       </ul>
