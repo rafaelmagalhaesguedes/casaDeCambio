@@ -13,29 +13,41 @@ import { obterCotacao } from './services/api.js';
 import Icon from './assets/coin.png';
 
 // Sweet alert
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+
+// Title
+const createTitle = (cotacao) => {
+  const head = 
+  `
+    <div class="title-secundary">
+      <h2 class="title-list">Valores referentes a 1 ${cotacao.base}</h2>
+    </div>
+  `;
+
+  return head;
+}
 
 // Exibe cotação de moedas
 function exibirCotacao(cotacao) {
   const cotacaoDiv = document.getElementById('cotacao');
   cotacaoDiv.innerHTML = '';
 
-  const head = `
-    <div class="title-secundary">
-      <h2 class="title-list">Valores referentes a 1 ${cotacao.base}</h2>
-    </div>
-  `;
+  const title = createTitle(cotacao);
 
   const cotacoes = cotacao.rates;
-  const cotacoesHtml = Object.entries(cotacoes).map(([moeda, valor]) => `
-      <ul class="list">
-        <li class="link-icon"> <img src="${Icon}" /> </li>
-        <li class="link-moeda">${moeda}</li>
-        <li class="link-valor">${valor.toFixed(3)}</li>
-      </ul>
-  `).join('');
+  const cotacoesArray = Object.entries(cotacoes);
+  const cotacoesHtml = cotacoesArray.map(([moeda, valor]) => 
+  `<div class="wrap">
+    <ul class="list">
+      <li class="link-icon"> <img src="${Icon}" /> </li>
+      <li class="link-moeda">${moeda}</li>
+      <li class="link-valor">${valor.toFixed(3)}</li>
+    </ul>
+  </div>
+  `
+  ).join('');
 
-  cotacaoDiv.innerHTML = head + cotacoesHtml;
+  cotacaoDiv.innerHTML = title + cotacoesHtml;
 }
 
 // Evento de submissão do formulário
